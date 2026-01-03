@@ -1,0 +1,112 @@
+/* GLOBAL RESETS */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #f9f9f9; color: #333; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+a { text-decoration: none; color: inherit; }
+
+/* NAVBAR */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 30px; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; top: 0; z-index: 100;
+}
+.logo a { font-size: 1.5rem; font-weight: bold; }
+.nav-links { display: flex; align-items: center; gap: 20px; }
+.nav-item { font-weight: 500; transition: color 0.3s; }
+.nav-item:hover { color: #007bff; }
+.btn-signup { background: #333; color: white; padding: 8px 15px; border-radius: 5px; }
+.btn-logout { background: #dc3545; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; }
+
+/* --- FORM BOX DESIGN (Vertical Layout) --- */
+
+/* 1. The Container (Centers the box on the screen) */
+.form-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Takes up most of the screen height */
+    padding: 20px;
+}
+
+/* 2. The Box Itself (White card, shadow, rounded corners) */
+.form-box {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px; /* Limits width so it looks like a card */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* 3. The Vertical Form Layout */
+.vertical-form {
+    display: flex;
+    flex-direction: column; /* This forces vertical stacking */
+    gap: 20px; /* Space between inputs */
+}
+
+/* 4. Inputs & Buttons */
+.form-input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dashboard Specific Upload Box */
+.dashboard-upload-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 0 auto 40px auto; /* Center it */
+}
+
+/* MASONRY GRID (The Core Feature) */
+.masonry-wrapper { column-count: 3; column-gap: 15px; margin-top: 20px; }
+.masonry-item {
+    break-inside: avoid; margin-bottom: 15px;
+    background: white; border-radius: 8px; overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s;
+}
+.masonry-item:hover { transform: scale(1.02); }
+.masonry-item img { width: 100%; display: block; }
+.image-info { padding: 10px; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) { .masonry-wrapper { column-count: 2; } }
+@media (max-width: 480px) { .masonry-wrapper { column-count: 1; } }
