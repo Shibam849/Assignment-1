@@ -4,7 +4,7 @@ This is a responsive full-stack web application built for the Web Development as
 
 ## 🔗 Live Links
 * **Frontend (Vercel):** [https://assignment-1-jade-nu.vercel.app/]
-* **Backend (Render):** [srv-d5cgtbdactks73cg3oc0]
+* **Backend (Render):** [https://assignment-1-jmbq.onrender.com]
 
 ## 🛠 Technologies Used
 * **Frontend:** React.js, CSS (Custom Masonry Layout)
