@@ -3,8 +3,8 @@
 This is a responsive full-stack web application built for the Web Development assignment. It allows artists to register, login, upload their artwork to a personal dashboard, and share a public portfolio link.
 
 ## 🔗 Live Links
-* **Frontend (Vercel):** [INSERT YOUR VERCEL LINK HERE]
-* **Backend (Render):** [INSERT YOUR RENDER LINK HERE]
+* **Frontend (Vercel):** [https://assignment-1-jade-nu.vercel.app/]
+* **Backend (Render):** [srv-d5cgtbdactks73cg3oc0]
 
 ## 🛠 Technologies Used
 * **Frontend:** React.js, CSS (Custom Masonry Layout)
